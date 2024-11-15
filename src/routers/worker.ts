@@ -104,6 +104,7 @@ router.post("/payout", workerMiddleware, async (req, res) => {
         console.log({ err })
         res.status(500).json({ message: "Transaction failed" })
     }
+    
 })
 
 router.get("/balance", workerMiddleware, async (req, res) => {
