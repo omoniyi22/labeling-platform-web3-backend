@@ -26,3 +26,5 @@ app.listen(PORT, () => {
     console.log("Saas Project", `listening on ${PORT}`)
 })
 
+
+export default app
