@@ -97,7 +97,7 @@ router.post("/payout", workerMiddleware, async (req, res) => {
         })
 
         res.json({
-            message: `${worker!.pending_amount / TOTAL_DECIMALS} Amount sent, You will recieve in few seconds`,
+            message: `${worker!.pending_amount / TOTAL_DECIMALS} Amount sent, You will recieve it in few seconds`,
             amount: worker.pending_amount
         })
     } catch (err) {
